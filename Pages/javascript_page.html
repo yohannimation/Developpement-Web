@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>A définir</title>
+	<link href="../CSS/javascript_page.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet"> 
+</head>
+<body class="container">
+
+	<!-- header-->
+	<header>
+		<img>
+		<nav>
+			<ul>
+				<li><a href="../index.html">Accueil</a></li>
+				<li><a href="html_page.html">HTML</a></li>
+				<li><a href="css_page.html">CSS</a></li>
+				<li><a href="php_page.html">PHP</a></li>
+				<li><a href="javascript_page.html">JavaScript</a></li>
+			</ul>
+		</nav>
+	</header>
+	<!-- fin header-->
+
+	<!-- contenu-->
+	<main>
+		<div class="presentation">
+			<h2>JavaScript</h2>
+			<p>
+				Dans cette page, vous découvrirez tout ce que j'ai pu apprendre en JavaScript.
+			</p>
+		</div>
+		<article class="contenu">
+			<h3>Les boutons</h3>
+			<br>
+			<div id="tout_bouton">
+				<div id="notif" class="bouton">
+					Notification<br>du navigateur
+				</div>
+				<div id="ecrit_navigateur" class="bouton" onmousedown="return false" onselectstart="return false">
+					Écrit dessous
+				</div>
+				<div id="sweet" class="bouton">
+					Utilisation de<br>Sweetalert
+				</div>
+			</div>
+			<div id="messages">
+			</div>
+		</article>
+		<article class="contenu">
+			<h3>Un compteur</h3>
+			<br>
+			<div id="tout_compteur" onmousedown="return false" onselectstart="return false">
+				<div id="bouton_moins" class="bouton">-</div>
+				<span id="nb">0</span>
+				<div id="bouton_plus" class="bouton">+</div>
+			</div>
+			<div id="reset">
+				<span id="bouton_reset">Reset</span>
+			</div>
+		</article>
+
+	</main>
+	<!-- fin contenu-->
+
+	<footer>
+		<p>©  2022 Yohannimation</p>
+	</footer>
+	<script src="../JS/javascript_page.js" type="text/javascript"></script>
+	<script src="../Ressources/sweetalert2.min.js" type="text/javascript"></script>
+</body>
+
+</html>

@@ -1,0 +1,524 @@
+*
+{
+	padding: 0;
+	margin: 0;
+}
+
+body
+{
+	background-color: #D2D2D2;
+	font-family: 'Bree Serif', serif;
+	display: grid;
+	grid-template-columns: 1fr 5fr 1fr;
+	grid-gap: 10px;
+	grid-template-areas: '. header .'
+						 '. main .'
+						 '. footer .';
+}
+
+
+/*________________________________________menu_______________________________________*/
+header
+{
+	position: relative;
+	grid-area: header;
+	background-color: white;
+	padding: 15px;
+	padding-top: 0;
+	border-radius: 0 0 30px 30px;
+}
+
+nav
+{
+	display: flex;
+	justify-content: flex-end;
+}
+
+header ul
+{
+	list-style-type:none;
+	margin: 0;
+	padding: 0;
+}
+
+header li
+{
+	display: inline-block;
+	margin-right: 15px;
+	margin-left: 15px;
+	padding: 0;
+}
+
+header ul li a
+{
+	display: block;
+	padding: 8px;
+	background-color: #D2D2D2;
+	border-radius: 10px;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5em;
+	transition: .2s;
+}
+
+header ul li a:hover
+{
+	display: block;
+	padding: 8px;
+	background-color: grey;
+	border-radius: 10px;
+	color: white;
+	text-decoration: none;
+	text-align: center;
+	font-size: 1.5em;
+}
+/*________________________________________menu_______________________________________*/
+
+main
+{
+	grid-area: main;
+}
+
+.presentation
+{
+	margin-top: 3%;
+	margin-bottom: 6%;
+	padding: 3%;
+	border-radius: 30px;
+	text-align: center;
+	background-color: white;
+	font-size: 1.6em;
+}
+
+.contenu
+{
+	margin-top: 3%;
+	padding: 3%;
+	border-radius: 30px;
+	text-align: left;
+	background-color: white;
+	font-size: 1.6em;
+}
+
+.flex
+{
+	display: flex;
+	justify-content: space-around;
+}
+
+/*________________________________________formes_______________________________________*/
+#carre
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+}
+
+#carre_bord_rond
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;	
+	border-radius: 20px;
+}
+
+#carre_bord_rond_diago
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	border-radius: 20px 0 20px 0;
+}
+
+#rond
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	border-radius: 100%;
+}
+
+#ovale
+{
+	width: 200px;
+	height: 122px;
+	background-color: #00C2FF;
+	border-radius: 50% 50% 50% 50%;
+}
+
+#triangle
+{
+	width: 0;
+	height: 0;
+	background-color: transparent;
+	border-bottom: 122px solid #00C2FF;
+	border-left: 61px solid transparent;
+	border-right: 61px solid transparent;
+}
+/*________________________________________formes_______________________________________*/
+
+/*________________________________________ombres_______________________________________*/
+#ombre_bas_droit
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	box-shadow: 10px 15px 0px red;
+}
+
+#ombre_haut_gauche
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	box-shadow: -10px -15px 0px red;	
+}
+
+#ombre_bas_droit_diffu
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	box-shadow: 10px 15px 15px red;
+}
+
+#lueur
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	box-shadow: 0px 0px 30px red;
+}
+/*________________________________________ombres_______________________________________*/
+
+/*________________________________________degrades_______________________________________*/
+#haut_bas
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	background: linear-gradient(to bottom, #FFA200, #00FF2B);
+
+}
+
+#droite_gauche
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	background: linear-gradient(to left, #FFA200, #00FF2B);
+}
+
+#diago
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	background: linear-gradient(to bottom left, #FFA200, #00FF2B);
+}
+
+#radial
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	background: radial-gradient(circle at center, #00FF2B, #FFA200);
+}
+
+#radial_angle
+{
+	width: 122px;
+	height: 122px;
+	background-color: #00C2FF;
+	background: radial-gradient(ellipse at bottom left, #00FF2B, #FFA200);
+}
+/*________________________________________degrades_______________________________________*/
+
+/*________________________________________opacite_______________________________________*/
+#texte25
+{
+	display: flex;
+	align-items: center;
+	width: 122px;
+	height: 122px;
+	background-color: #8EBE09;
+	text-align: center;
+	font-size: .8em;
+	color: rgba(0, 0, 0, 0.25);
+}
+
+#texte50
+{
+	display: flex;
+	align-items: center;
+	width: 122px;
+	height: 122px;
+	background-color: #8EBE09;
+	text-align: center;
+	font-size: .8em;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+#texte75
+{
+	display: flex;
+	align-items: center;
+	width: 122px;
+	height: 122px;
+	background-color: #8EBE09;
+	text-align: center;
+	font-size: .8em;
+	color: rgba(0, 0, 0, 0.75);
+}
+
+#carre50
+{
+	display: flex;
+	align-items: center;
+	width: 122px;
+	height: 122px;
+	text-align: center;
+	font-size: .8em;
+	background-color: rgba(142, 190, 9, 0.5);
+}
+
+#carre25
+{
+	display: flex;
+	align-items: center;
+	width: 122px;
+	height: 122px;
+	text-align: center;
+	font-size: .8em;
+	background-color: rgba(142, 190, 9, 0.25);
+}
+/*________________________________________opacite_______________________________________*/
+
+/*________________________________________transfo_______________________________________*/
+.fond_transfo
+{
+	margin: 2%;
+	padding: 3%;
+	padding-bottom: 0;
+	widht: 100%;
+	height: 160px;
+	background: linear-gradient(to left, #D52E2E, #C98A8A);
+}
+
+#un_carre
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: rotate(-20deg);
+}
+
+#deux_carre
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(500px);
+}
+
+#trois_carre
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(1000px) rotate(20deg);
+}
+
+#quatre_carre
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: scale(.50);
+}
+/*________________________________________transfo_______________________________________*/
+
+/*________________________________________hover_______________________________________*/
+.fond_transfo_hover
+{
+	margin: 2%;
+	padding: 3%;
+	padding-bottom: 0;
+	widht: 100%;
+	height: 160px;
+	background: linear-gradient(to left, #2ED582, #8AC9AE);
+}
+
+#un_carre_hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: rotate(-20deg);
+	transition : transform .5s;
+}
+
+#un_carre_hover:hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: rotate(20deg);
+}
+
+#deux_carre_hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(0px);
+	transition : transform 1.5s;
+}
+
+#deux_carre_hover:hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(500px);
+}
+
+#trois_carre_hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(0px) rotate(-20deg);
+	transition : transform 1.5s;
+}
+
+#trois_carre_hover:hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(1000px) rotate(20deg);
+}
+
+#quatre_carre_hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: scale(1);
+	transition : transform .5s;
+}
+
+#quatre_carre_hover:hover
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: scale(.50);
+}
+/*________________________________________hover_______________________________________*/
+
+/*________________________________________anim_______________________________________*/
+.fond_animation
+{
+	margin: 2%;
+	padding: 3%;
+	padding-bottom: 0;
+	widht: 100%;
+	height: 160px;
+	background: linear-gradient(to left, #2EA2D5, #8ABCC9);
+}
+
+#un_carre_anim
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: rotate(-20deg);
+	animation: carre1 2s infinite;
+}
+
+#deux_carre_anim
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(500px);
+	animation: carre2 2s infinite;
+}
+
+#trois_carre_anim
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: translateX(1000px) rotate(20deg);
+	animation: carre3 2s infinite;
+}
+
+#quatre_carre_anim
+{
+	width: 122px;
+	height: 122px;
+	background-color: white;
+	transform: scale(.50);
+	animation: carre4 2s infinite;
+}
+
+@keyframes carre1 {
+	0% {
+	    transform: rotate(-20deg);
+	}
+	50% {
+	    transform: rotate(20deg);
+	}
+	100% {
+		transform: rotate(-20deg);
+	}
+}
+
+@keyframes carre2 {
+	0% {
+	    transform: translateX(0px);
+	}
+	50% {
+	    transform: translateX(500px);
+	}
+	100% {
+		transform: translateX(0px);
+	}
+}
+
+@keyframes carre3 {
+	0% {
+	    transform: translateX(0px) rotate(-20deg);
+	}
+	50% {
+	    transform: translateX(1000px) rotate(20deg);
+	}
+	100% {
+		transform: translateX(0px) rotate(-20deg);
+	}
+}
+
+@keyframes carre4 {
+	0% {
+	    transform: scale(1);
+	}
+	50% {
+	    transform: scale(.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+/*________________________________________anim_______________________________________*/
+footer
+{
+	margin-top: 6%;
+	margin-bottom: 5%;
+	grid-area: footer;
+	text-align: center;
+	font-size: 1.15em;
+}
